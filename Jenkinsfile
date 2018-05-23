@@ -5,12 +5,12 @@ pipeline {
       steps {
         git(url: 'https://github.com/Secsec/hahayes', branch: 'master')
         sh 'mvn package'
-        stash 'haha-0.0.1-SNAPSHOT.jar'
+        stash 'yes-0.0.1-SNAPSHOT.jar'
       }
     }
     stage('Build Image') {
       steps {
-        unstash 'secsec-0.0.1-SNAPSHOT.jar'
+        unstash 'yes-0.0.1-SNAPSHOT.jar'
         sh 'oc start-build cart --from-file=target/haha-0.0.1-SNAPSHOT.jar --follow'
       }
     }
