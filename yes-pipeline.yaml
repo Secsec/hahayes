@@ -12,7 +12,7 @@ items:
     source:
       git:
         ref: pipeline
-        uri: https://github.com/Secsec/hahayes
+        uri: https://github.com/Secsec/hahayes.git
       type: Git
     strategy:
       type: JenkinsPipeline
