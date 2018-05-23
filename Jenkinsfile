@@ -11,7 +11,7 @@ pipeline {
     stage('Build Image') {
       steps {
         unstash 'yes-0.0.1-SNAPSHOT.jar'
-        sh 'oc start-build yes --from-file=target/yes-0.0.1-SNAPSHOT.jar --follow'
+        sh 'oc start-build --from-file=target/yes-0.0.1-SNAPSHOT.jar --follow'
       }
     }
   }
