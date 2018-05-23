@@ -7,7 +7,7 @@ items:
   metadata:
     annotations:
       pipeline.alpha.openshift.io/uses: '[{"name": "yes", "namespace": "", "kind": "DeploymentConfig"}]'
-    name: cart-service-pipeline
+    name: yes-service-pipeline
   spec:
     source:
       git:
