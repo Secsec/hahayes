@@ -9,8 +9,7 @@ pipeline {
     }
     stage('Checkout') {
       steps {
-        unstash 'yes-0.0.1-SNAPSHOT.jar'
-        sh 'oc start-build yes-service-pipeline --from-file=target/yes-0.0.1-SNAPSHOT.jar --follow'
+        sh 'echo'
       }
     }
     stage('Unit Tests') {
