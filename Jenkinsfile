@@ -15,9 +15,7 @@ pipeline {
       }
     }
   }
-  tools {
-    maven 'maven.3.5.3'
-  }
+
   environment {
     maven = ''
   }
