@@ -12,7 +12,7 @@ pipeline {
         sh 'echo'
       }
     }
-        stage('SonarQube Analysis') {
+    stage('SonarQube Analysis') {
       steps {
         sh 'echo'
       }
